@@ -1,0 +1,93 @@
+.content {
+}
+body {
+	background-image: url(../images/paper-186899_1920.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	scroll-behavior: smooth;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+section {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.heading {
+	text-align: center;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.subHeading {
+	text-align: center;
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 20px;
+}
+.subSubHeading {
+	text-align: center;
+	font-weight: bold;
+	color: red;
+	font-size: 15px;
+}
+
+/* #fizzBuzz {
+	display: inline-block;
+}
+#fizzBuzz p {
+}
+ul {
+  padding: 0;
+}
+
+li {
+  display: inline;
+  list-style: none;
+  counter-increment: item;
+}
+
+li::before {
+  content: counter(item);
+  padding: 1px;
+}
+
+li:nth-child(3n)::before {
+  content: "Fizz";
+  background-color: hsl(90 90% 40%);
+  color: white;
+}
+
+li:nth-child(5n)::before {
+  content: "Buzz";
+  background-color: hsl(30 90% 40%);
+  color: white;
+}
+
+li:nth-child(15n)::before {
+  content: "FizzBuzz";
+  background-color: hsl(190 90% 40%);
+}
+
+li:not(:last-child)::after {
+  content: ", ";
+}
+
+li:last-child::after {
+  content: ". ";
+} */
+
+.loopArrayChallenge ul {
+	text-align: center;
+	list-style-position: outside;
+
+	font-weight: bold;
+	font-size: 25px;
+}
+.loopArrayChallenge ol {
+	text-align: center;
+	list-style-position: outside;
+
+	font-weight: bold;
+	font-size: 25px;
+}
