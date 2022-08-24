@@ -1,170 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- This is your stylesheets -->
-		<!-- --------------------------------------------------------------------------------------------------- -->
-		<link rel="stylesheet" type="text/css" href="static/css/styles.css" />
-		<link rel="stylesheet" type="text/css" href="static/css/navbar.css" />
-		<link
-			rel="stylesheet"
-			type="text/css"
-			href="static/css/defaultStyles.css"
-		/>
-		<!-- --------------------------------------------------------------------------------------------------- -->
-		<!-- Your fonts (my personal favorite is Roboto) -->
-		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
-			rel="stylesheet"
-		/>
 
-		<link
-			href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
-			rel="stylesheet"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-		/>
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-			crossorigin="anonymous"
-		/>
-		<!-- --------------------------------------------------------------------------------------------------- -->
-		<!-- Please feel free to change the title to whatever your project is -->
-		<title>Interactive Web Apps Codespace Part 3 of 3</title>
-		<!-- --------------------------------------------------------------------------------------------------- -->
-	</head>
-	<body>
-		<header id="header">
-			<nav>
-				<div class="custom-nav-container">
-					<div class="header">
-						<a href="" class="logo"
-							>Interactive Web Apps Codespace Part 3 of 3</a
-						>
-					</div>
-					<div class="menu">
-						<a href="#login"
-							><i class="fa-solid fa-right-to-bracket"></i>Login</a
-						>
-						<a href="#header"><i class="fa-solid fa-house"></i>Home</a>
-						<a href="#content"
-							><i class="fa-brands fa-pied-piper-alt"></i> Content</a
-						>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- This is your stylesheets -->
+	<!-- --------------------------------------------------------------------------------------------------- -->
+	<link rel="stylesheet" type="text/css" href="static/css/styles.css" />
+	<link rel="stylesheet" type="text/css" href="static/css/navbar.css" />
+	<link rel="stylesheet" type="text/css" href="static/css/defaultStyles.css" />
+	<!-- --------------------------------------------------------------------------------------------------- -->
+	<!-- Your fonts (my personal favorite is Roboto) -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
 
-						<a href="#footer"
-							><i class="fa-solid fa-address-card"></i> Contact</a
-						>
-					</div>
-					<button class="hamburger">
-						<span></span>
-						<span></span>
-						<span></span>
-					</button>
+	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+	<!-- --------------------------------------------------------------------------------------------------- -->
+	<!-- Please feel free to change the title to whatever your project is -->
+	<title>Interactive Web Apps Codespace Part 3 of 3</title>
+	<!-- --------------------------------------------------------------------------------------------------- -->
+</head>
+
+<body>
+	<header id="header">
+		<nav>
+			<div class="custom-nav-container">
+				<div class="header">
+					<a href="" class="logo">Interactive Web Apps Codespace Part 3 of 3</a>
 				</div>
-			</nav>
-		</header>
-		<nav class="mobile-nav">
-			<a href="#login"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
-			<a href="#header"><i class="fa-solid fa-house"></i> Home</a>
-			<a href="#content">
-				<i class="fa-brands fa-pied-piper-alt"></i> Content</a
-			>
+				<div class="menu">
+					<a href="#login"><i class="fa-solid fa-right-to-bracket"></i>Login</a>
+					<a href="#header"><i class="fa-solid fa-house"></i>Home</a>
+					<a href="#content"><i class="fa-brands fa-pied-piper-alt"></i> Content</a>
 
-			<a href="#footer"><i class="fa-solid fa-address-card"></i> Contact</a>
+					<a href="#footer"><i class="fa-solid fa-address-card"></i> Contact</a>
+				</div>
+				<button class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+			</div>
 		</nav>
-		<div class="content" id="content">
-			<!-- --------------------------------------------------------------------------------------------------- -->
-			<!-- ------------------This is where you start working-------------------------- -->
-			<!-- --------------------------------------------------------------------------------------------------- -->
-			<section class="">
-				<h1 class="heading">FizzBuzz</h1>
-				<ul id="fizzBuzz"></ul>
-			</section>
-			<hr />
-			<section class="loopArrayChallenge">
-				<div>
-					<h1 class="heading">Loops and Arrays Challenge</h1>
-					<p class="subHeading">Activity 1</p>
-					<p class="subSubHeading">
-						Using the "for" loop display the value of each of these items
-					</p>
-				</div>
-				<div>
-					<ul id="loops1"></ul>
-					<p class="subHeading">Activity 2</p>
-					<p class="subSubHeading">sum of all the items leading up to 10</p>
-					<ol id="loops2"></ol>
-				</div>
-				<div>
-					<p class="subHeading">Activity 3</p>
-					<p class="subSubHeading">
-						Using the tasks variable created above .Leading up to the "length"
-						of your tasks variable
-					</p>
-				</div>
-			</section>
-			<hr />
-			<!-- --------------------------------------------------------------------------------------------------- -->
-			<!-- --------------------------------------------------------------------------------------------------- -->
-		</div>
+	</header>
+	<nav class="mobile-nav">
+		<a href="#login"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+		<a href="#header"><i class="fa-solid fa-house"></i> Home</a>
+		<a href="#content">
+			<i class="fa-brands fa-pied-piper-alt"></i> Content</a>
 
-		<footer id="footer">
-			<div class="footer-content">
-				<div class="personalInfo">
-					<div class="bottomLine"></div>
-					<h3 class="textEffect">Duane Scheepers</h3>
-					<h4 class="textEffect">
-						<i class="fa fa-whatsapp"></i> <span>072 495 4378</span>
-					</h4>
-					<h4 class="textEffect">
-						<i class="fa fa-envelope"></i>
-						<span class="underline">duaneo2011@gmail.com</span>
-					</h4>
-				</div>
-				<div class="socials">
-					<div>
-						<a href="https://www.instagram.com/coffe_is_great2021/"
-							><i class="fa fa-instagram"></i
-						></a>
-					</div>
-					<div>
-						<a href="https://github.com/DuaneScheepersWebDeveloper"
-							><i class="fa fa-github"></i
-						></a>
-					</div>
-					<div>
-						<a href="https://www.linkedin.com/in/duane-scheepers-b2bb53240/"
-							><i class="fa fa-linkedin-square"></i
-						></a>
-					</div>
-				</div>
+		<a href="#footer"><i class="fa-solid fa-address-card"></i> Contact</a>
+	</nav>
+	<div class="content" id="content">
+		<!-- --------------------------------------------------------------------------------------------------- -->
+		<!-- ------------------This is where you start working-------------------------- -->
+		<!-- --------------------------------------------------------------------------------------------------- -->
+		<section class="">
+			<h1 class="heading">FizzBuzz Challenge</h1>
+			<p class="subSubHeading">
+				Check the console
+			</p>
+			<p id="fizzBuzz"></p>
+		</section>
+		<hr />
+		<section class="loopArrayChallenge">
+			<div>
+				<h1 class="heading">Loops and Arrays Challenge</h1>
+				<p class="subSubHeading">
+					Check the console
+				</p>
+				<p id="loops1"></p>
+		</section>
+		<hr />
+		<section>
+			<h1 class="heading">Functions and Arrays Challenge</h1>
+			<p class="subSubHeading">
+				Check the console
+			</p>
+			<ol id="functionsAndArrayChallenge"></ol>
+			<p id="functionsAndArrayChallenge2"></p>
+		</section>
+		<hr />
+		<section>
+			<h1 class="heading">Destructuring and Restructuring Challenge</h1>
+			<p class="subSubHeading">
+				Check the console
+			</p>
+			<ol id="destructuringAndRestructuringChallenge"></ol>
+			<p id="destructuringAndRestructuringChallenge2"></p>
+		</section>
+			<hr />
+		<!-- --------------------------------------------------------------------------------------------------- -->
+		<!-- --------------------------------------------------------------------------------------------------- -->
+	</div>
 
-				<div class="footer-bottom">
-					<!-- <button class="button" onclick="alert">
-						<span> Testing Javascript </span>
-					</button> -->
-					<div class="footer-menu">
-						<a href="" class="footerArrow"
-							><i class="fa-solid fa-circle-arrow-up"></i
-						></a>
-					</div>
+	<footer id="footer">
+		<div class="footer-content">
+			<div class="personalInfo">
+				<div class="bottomLine"></div>
+				<h3 class="textEffect">Duane Scheepers</h3>
+				<h4 class="textEffect">
+					<i class="fa fa-whatsapp"></i> <span>072 495 4378</span>
+				</h4>
+				<h4 class="textEffect">
+					<i class="fa fa-envelope"></i>
+					<span class="underline">duaneo2011@gmail.com</span>
+				</h4>
+			</div>
+			<div class="socials">
+				<div>
+					<a href="https://www.instagram.com/coffe_is_great2021/"><i class="fa fa-instagram"></i></a>
+				</div>
+				<div>
+					<a href="https://github.com/DuaneScheepersWebDeveloper"><i class="fa fa-github"></i></a>
+				</div>
+				<div>
+					<a href="https://www.linkedin.com/in/duane-scheepers-b2bb53240/"><i
+							class="fa fa-linkedin-square"></i></a>
 				</div>
 			</div>
-		</footer>
-	</body>
+
+			<div class="footer-bottom">
+				<!-- <button class="button" onclick="alert">
+						<span> Testing Javascript </span>
+					</button> -->
+				<div class="footer-menu">
+					<a href="" class="footerArrow"><i class="fa-solid fa-circle-arrow-up"></i></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+
 </html>
 <script src="./Static/javascript/navbar.js" charset="utf-8"></script>
-<script src="./Static/javascript/index.js" charset="utf-8"></script>
 <script src="./Static/javascript/fizzBuzz.js" charset="utf-8"></script>
-<script src="./Static/javascript/loopsAndArrays.js" charset="utf-8"></script>
 
-<script
-	src="https://kit.fontawesome.com/80b954ffb3.js"
-	crossorigin="anonymous"
-></script>
+<script src="./Static/javascript/loopsAndArrays.js" charset="utf-8"></script>
+<script src="./Static/javascript/index.js" charset="utf-8"></script>
+<script src="./Static/javascript/functionsAndArraysChallenge.js" charset="utf-8"></script>
+<script src="./Static/javascript/destructuringAndRestructuringChallenge.js" charset="utf-8"></script>
+<script src="https://kit.fontawesome.com/80b954ffb3.js" crossorigin="anonymous"></script>
